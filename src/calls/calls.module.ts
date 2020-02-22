@@ -2,9 +2,10 @@ import { Module } from '@nestjs/common';
 
 import { CallsController } from './calls.controller';
 import { CallsService } from './calls.service';
+import { Call } from './call.entity';
 
 @Module({
-    imports: [],
+    imports: [Call],
       controllers: [CallsController],
       providers: [CallsService],
 })
