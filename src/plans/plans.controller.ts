@@ -12,4 +12,9 @@ export class PlansController {
         plan.totalPrice = 30.3 + 10;
         return plan;
     }
+
+    @Get()
+    async findAll(): Promise<Plan[]> {
+        return this.plansService.findAll();
+    }
 }

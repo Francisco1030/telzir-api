@@ -14,4 +14,8 @@ export class PlansService {
         const plan = this.plans.find((value) => value.id == id);
         return plan;
     }
+
+    findAll() {
+        return this.plans;
+    }
 }
