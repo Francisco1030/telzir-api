@@ -4,4 +4,6 @@ export class Call {
     time: number;
     price: number;
     totalPrice: number;
+    totalPricePlan: number;
+    planId: number;
 }

@@ -8,5 +8,6 @@ import { Plan } from './plan.entity';
   imports: [Plan],
       controllers: [PlansController],
       providers: [PlansService],
+      exports: [PlansService],
 })
 export class PlansModule {}
