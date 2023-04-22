@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  api:
+    build: .
+    container_name: api-telzir-call
+    ports:
+      - "3000:3000"
+    command: npm start
