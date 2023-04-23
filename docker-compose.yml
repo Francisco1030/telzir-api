@@ -1,9 +1,15 @@
 version: "3.7"
 
 services:
-  api:
-    build: .
+  main:
     container_name: api-telzir-call
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
     ports:
-      - "3000:3000"
-    command: npm start
+      - 3000:3000
+      - 9229:9229
+    command: npm run start:dev
